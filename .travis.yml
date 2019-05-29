@@ -25,9 +25,6 @@ before_install:
   - upx --version | grep -E '^upx'
   - chmod +x upx.sh
   - go install github.com/UnnoTed/fileb0x
-  - go get -v github.com/alecthomas/gometalinter/...
-  - gometalinter --install
-  - gometalinter
 
 script:
   - go test -v ./...
